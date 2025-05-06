@@ -1,5 +1,5 @@
 {
-  "homepage": "https://rinay06.github.io/your-repository-name",
+  "homepage": "https://rinay06.github.io/connectFour",
   "name": "connect-four",
   "version": "0.1.0",
   "private": true,
@@ -16,11 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "react-scripts build && cp -r build/* docs/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo skipped (manual deploy to docs folder)"
   },
   "eslintConfig": {
     "extends": [
