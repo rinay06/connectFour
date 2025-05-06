@@ -1,0 +1,31 @@
+.cell {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #f8f8f8;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .cell.pink {
+    background-color: rgb(248, 163, 200);
+    animation: drop 0.3s ease-out;
+  }
+  
+  .cell.blue {
+    background-color: rgb(111, 165, 227);
+    animation: drop 0.3s ease-out;
+  }
+  
+  @keyframes drop {
+    from {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
